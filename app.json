@@ -13,13 +13,19 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "This app needs access to your microphone to capture your speech.",
+        "NSSpeechRecognitionUsageDescription": "This app uses speech recognition to transcribe your speech."
+      },
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.DoctorDashboard"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.anonymous.DoctorDashboard"
     },
     "web": {
       "favicon": "./assets/favicon.png"
